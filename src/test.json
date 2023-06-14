@@ -1,0 +1,100 @@
+[
+  {
+    "id": "1",
+    "user": "Dart Vader",
+    "tweets": 777,
+    "followers": 100500,
+    "avatar": "https://cdn.pixabay.com/photo/2023/04/15/17/19/cat-7928232_1280.png"
+  },
+  {
+    "id": "2",
+    "user": "Keanu Reeves",
+    "tweets": 555,
+    "followers": 99500,
+    "avatar": "https://cdn.pixabay.com/photo/2022/12/24/14/18/bear-7675987_1280.jpg"
+  },
+  {
+    "id": "3",
+    "user": "Monika",
+    "tweets": 23,
+    "followers": 96300,
+    "avatar": "https://cdn.pixabay.com/photo/2023/06/01/12/32/three-kingdoms-8033526_1280.jpg"
+  },
+  {
+    "id": "4",
+    "user": "Bill Gates",
+    "tweets": 988,
+    "followers": 222900,
+    "avatar": "https://cdn.pixabay.com/photo/2017/10/25/19/45/piggy-bank-2889042_1280.jpg"
+  },
+  {
+    "id": "5",
+    "user": "Elon Mask",
+    "tweets": 105,
+    "followers": 85000,
+    "avatar": "https://cdn.pixabay.com/photo/2018/05/26/18/06/dog-3431913_1280.jpg"
+  },
+  {
+    "id": "6",
+    "user": "Anna",
+    "tweets": 40,
+    "followers": 9999,
+    "avatar": "https://cdn.pixabay.com/photo/2023/06/02/14/12/woman-8035772_1280.jpg"
+  },
+  {
+    "id": "7",
+    "user": "Micha Like",
+    "tweets": 140,
+    "followers": 888851,
+    "avatar": "https://cdn.pixabay.com/photo/2023/05/24/03/16/flowers-8013886__340.png"
+  },
+  {
+    "id": "8",
+    "user": "Papillon",
+    "tweets": 635,
+    "followers": 200200,
+    "avatar": "https://cdn.pixabay.com/photo/2023/05/23/23/58/moth-8013721__340.jpg"
+  },
+  {
+    "id": "9",
+    "user": "Kate Forest",
+    "tweets": 744,
+    "followers": 85000,
+    "avatar": "https://cdn.pixabay.com/photo/2020/02/07/21/12/everest-4828404__340.png"
+  },
+  {
+    "id": "10",
+    "user": "Zebra",
+    "tweets": 9,
+    "followers": 105,
+    "avatar": "https://cdn.pixabay.com/photo/2023/02/26/16/08/zebra-7816234__340.jpg"
+  },
+  {
+    "id": "11",
+    "user": "Cute Cat",
+    "tweets": 59,
+    "followers": 23000,
+    "avatar": "https://cdn.pixabay.com/photo/2018/02/26/11/13/cat-3182830_640.png"
+  },
+  {
+    "id": "12",
+    "user": "NotCute Cat",
+    "tweets": 800,
+    "followers": 563333,
+    "avatar": "https://cdn.pixabay.com/photo/2019/10/30/07/04/car-4588860_640.png"
+  },
+  {
+    "id": "13",
+    "user": "Mango",
+    "tweets": 96,
+    "followers": 3000,
+    "avatar": "https://cdn.pixabay.com/photo/2023/03/23/14/29/bird-7872096__340.jpg"
+  },
+  {
+    "id": "14",
+    "user": "Kitty",
+    "tweets": 4,
+    "followers": 10,
+    "avatar": "https://cdn.pixabay.com/photo/2023/03/27/14/24/british-shorthair-7880908__340.jpg"
+  }
+]
