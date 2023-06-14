@@ -1,14 +1,26 @@
-import React, { useState } from "react";
-import {
-  BackButton,
-  Container,
-  Dropdown,
-  Title,
-  TweetCard,
-  TweetContent,
-} from "./Tweets.styled";
+import React, { useEffect, useState } from "react";
+import { BackButton, Container, Dropdown, Title } from "./Tweets.styled";
 
+import { useDispatch, useSelector } from "react-redux";
+import {
+  // getError,
+  // getFilter,
+  getItems,
+  // getLoad,
+} from "../../redux/users/users-slice";
+import { fetchUsers } from "../../redux/users/users-operations";
+import TweetList from "../../components/TweetList/TweetList";
 const Tweets = () => {
+  const dispatch = useDispatch();
+  const items = useSelector(getItems);
+  // const isLoading = useSelector(getLoad);
+  // const error = useSelector(getError);
+  // const filter = useSelector(getFilter);
+
+  useEffect(() => {
+    dispatch(fetchUsers());
+  }, [dispatch]);
+
   const [filter, setFilter] = useState("show all");
 
   const handleFilterChange = (e) => {
@@ -26,9 +38,8 @@ const Tweets = () => {
       </Dropdown>
       {/* Render tweet cards based on filter */}
       {/* {tweets.map((tweet) => ( */}
-      <TweetCard>
-        <TweetContent>gfbg</TweetContent>
-      </TweetCard>
+      <TweetList tweets={items} />
+
       {/* //   ))} */}
     </Container>
   );
