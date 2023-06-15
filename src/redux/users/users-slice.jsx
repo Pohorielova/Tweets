@@ -1,13 +1,13 @@
 import { createAction, createSlice } from "@reduxjs/toolkit";
-import { fetchUsers, patchUser } from "./users-operations";
+import { fetchUsers } from "./users-operations";
 
 const InitialState = {
   users: {
     items: [],
+    following: [],
     isLoading: false,
     error: null,
   },
-  filter: "",
 };
 const handlePending = (state) => {
   state.users.isLoading = true;
@@ -23,9 +23,6 @@ const appSlice = createSlice({
   name: "tweets",
   initialState: InitialState,
   extraReducers: {
-    [changeFilterValue](state, action) {
-      state.filter = action.payload;
-    },
     [fetchUsers.pending]: handlePending,
     [fetchUsers.fulfilled](state, action) {
       state.users.isLoading = false;
@@ -33,13 +30,6 @@ const appSlice = createSlice({
       state.users.items = action.payload;
     },
     [fetchUsers.rejected]: handleRejected,
-    [patchUser.pending]: handlePending,
-    [patchUser.fulfilled](state, action) {
-      state.users.isLoading = false;
-      state.users.error = null;
-      state.users.items.push(action.payload);
-    },
-    [patchUser.rejected]: handleRejected,
   },
 });
 
@@ -49,4 +39,3 @@ export const appReducer = appSlice.reducer;
 export const getItems = (state) => state.tweets.users.items;
 export const getLoad = (state) => state.tweets.users.isLoading;
 export const getError = (state) => state.tweets.users.error;
-export const getFilter = (state) => state.tweets.filter;

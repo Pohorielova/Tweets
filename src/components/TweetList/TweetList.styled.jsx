@@ -6,7 +6,9 @@ export const List = styled.ul`
   text-decoration: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 22px;
+  width: 1406px;
 `;
 export const Card = styled.li`
   width: 380px;
@@ -104,7 +106,13 @@ export const Btn = styled.button`
   &:hover {
     transform: scale(1.05);
   }
-  &:active {
+  &.following {
     background: #5cd3a8;
+  }
+  &.load {
+    margin-top: 22px;
+    background-color: #ffa500;
+
+    color: #471ca9;
   }
 `;

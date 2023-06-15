@@ -12,15 +12,3 @@ export const fetchUsers = createAsyncThunk(
     }
   }
 );
-
-export const patchUser = createAsyncThunk(
-  "users/patchUser",
-  async (_, thunkAPI) => {
-    try {
-      const response = await axios.patch("/users");
-      return response.data;
-    } catch (e) {
-      return thunkAPI.rejectWithValue(e.message);
-    }
-  }
-);
