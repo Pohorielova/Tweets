@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import cardImage from "C:/Users/atsio/Documents/GitHub/Tweets/src/images/cardImg.png";
-import logo from "C:/Users/atsio/Documents/GitHub/Tweets/src/images/Logo.png";
+import cardImage from ".//cardImg.png";
+import logo from ".///Logo.png";
 import "../../index.css";
 export const List = styled.ul`
   text-decoration: none;
