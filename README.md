@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Tweets
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Tweets - це застосунок, який дозволяє переглядати твіти та додавати їх до списку відстежування. Застосунок розроблений з використанням React.
 
-## Available Scripts
+## Опис
 
-In the project directory, you can run:
+Tweets надає користувачам зручний спосіб перегляду твітів та стеження за їх обраною колекцією. Користувачі можуть переглядати список твітів, додавати обрані твіти до списку відстежування та знімати їх з відстеження.
 
-### `npm start`
+## Основні функціональні можливості включають:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-Відображення списку твітів з їх аватарками, кількістю твітів та кількістю фоловерів.
+-Додавання твітів до списку відстежування.
+-Зняття твітів зі списку відстежування.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Вимоги
 
-### `npm test`
+Для встановлення та запуску застосунку "Tweets" вам знадобиться:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-Node.js (v12 або новіша)
+-NPM (встановлюється разом з Node.js)
 
-### `npm run build`
+## Встановлення
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Склонуйте репозиторій "Tweets" до вашого локального середовища:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+`git clone `
+Перейдіть до директорії проекту:
+`
+cd tweets`
+Встановіть залежності проекту, виконавши команду:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`
+npm install`
 
-### `npm run eject`
+## Використання
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Запустіть застосунок "Tweets" за допомогою команди:
+`
+npm start`
+-Відкрийте ваш улюблений веб-браузер і перейдіть за адресою http://localhost:3000, щоб переглянути застосунок.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-На головній сторінці буде відображатись список твітів.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+-Щоб додати твіт до списку відстежування, натисніть кнопку "Follow" біля потрібного твіту.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+-Щоб зняти твіт зі списку відстежування, натисніть кнопку "Following" , який ви бажаєте зняти з відстежування. Він буде видалений зі списку відстежування.
 
-## Learn More
+## Додаткова інформація
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Застосунок "Tweets" розроблений з використанням React, використовуючи функціональні компоненти та хуки.
+Дані твітів використовуються з масиву переданого у властивості "tweets".
+Список відстежування твітів зберігається в локальному сховищі за допомогою localStorage.
